@@ -112,23 +112,6 @@ export default () => {
                         />
                         <UsageBox progress={parseInt(diskUsed)} title={'Disk Usage'} content={`${diskUsed}% used`} />
                     </ContentBox>
-                    <TitledGreyBox title={'Performance Metrics'} className={'rounded mt-4'}>
-                        {!messages || messages.length < 1 ? (
-                            <p className={'text-gray-400 text-center'}>No metrics are currently available.</p>
-                        ) : (
-                            <>
-                                {messages.slice(0, 6).map((message) => (
-                                    <Alert type={message.type} key={message.id} className={'mb-2'}>
-                                        <div>
-                                            {message.title}{' '}
-                                            <span className={'text-xs text-gray-400'}>({message.createdAt})</span>
-                                            <p className={'text-sm text-gray-400'}>{message.content}</p>
-                                        </div>
-                                    </Alert>
-                                ))}
-                            </>
-                        )}
-                    </TitledGreyBox>
                 </div>
             </div>
         </ServerContentBlock>

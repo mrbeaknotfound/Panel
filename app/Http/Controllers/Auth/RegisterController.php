@@ -45,7 +45,7 @@ class RegisterController extends AbstractLoginController
         $this->creationService->handle([
             'email' => $request->input('email'),
             'username' => $request->input('user'),
-            'name_first' => 'Jexactyl',
+            'name_first' => 'SillyDevelopment',
             'name_last' => 'User',
             'password' => $request->input('password'),
             'ip' => $request->getClientIp(),

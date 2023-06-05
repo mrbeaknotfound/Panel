@@ -125,8 +125,8 @@ export default () => {
             <Formik
                 onSubmit={submit}
                 initialValues={{
-                    name: `${user.username}'s server`,
-                    description: 'Write a server description here.',
+                    name: `${user.username}'s free 24/7 server`,
+                    description: 'Silly Development: Best free hosting service.',
                     cpu: resources.cpu,
                     memory: resources.memory,
                     disk: resources.disk,

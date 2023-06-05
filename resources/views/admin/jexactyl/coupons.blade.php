@@ -9,7 +9,7 @@
     <h1>Coupons<small>Create and manage coupons.</small></h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}">Admin</a></li>
-        <li class="active">Jexactyl</li>
+        <li class="active">Silly Development</li>
     </ol>
 @endsection
 

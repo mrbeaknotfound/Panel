@@ -14,11 +14,10 @@ export default () => {
             <div className={'flex flex-row items-center justify-between mt-10'}>
                 {width >= 1280 && (
                     <div>
-                        <h1 className={'text-6xl'}>Hey, {username}!</h1>
-                        <h3 className={'text-2xl mt-2 text-neutral-500'}>👋 Welcome to the store.</h3>
+                        <h1 className={'text-6xl'}>👋Welcome {username}!</h1>
+                        <h3 className={'text-2xl mt-2 text-neutral-500'}>Here you can order a server or buy some more resources!</h3>
                     </div>
                 )}
-                <ResourceBar className={'w-full lg:w-3/4'} />
             </div>
             <div className={'lg:grid lg:grid-cols-3 gap-8 my-10'}>
                 <StoreBanner

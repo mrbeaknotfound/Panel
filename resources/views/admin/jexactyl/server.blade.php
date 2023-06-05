@@ -9,7 +9,7 @@
     <h1>Server Settings<small>Configure Jexactyl's server settings.</small></h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}">Admin</a></li>
-        <li class="active">Jexactyl</li>
+        <li class="active">Silly Development</li>
     </ol>
 @endsection
 

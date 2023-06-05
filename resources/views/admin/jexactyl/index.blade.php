@@ -2,41 +2,19 @@
 @include('partials/admin.jexactyl.nav', ['activeTab' => 'index'])
 
 @section('title')
-    Jexactyl Settings
+    Settings
 @endsection
 
 @section('content-header')
-    <h1>Jexactyl Settings<small>Configure Jexactyl-specific settings for the Panel.</small></h1>
+    <h1>Settings<small>Configure The Panel.</small></h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}">Admin</a></li>
-        <li class="active">Jexactyl</li>
+        <li class="active">Silly Development</li>
     </ol>
 @endsection
 
 @section('content')
     @yield('jexactyl::nav')
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="box
-                @if($version->isLatestPanel())
-                    box-success
-                @else
-                    box-danger
-                @endif
-            ">
-                <div class="box-header with-border">
-                    <i class="fa fa-code-fork"></i> <h3 class="box-title">Software Release <small>Verify Jexactyl is up-to-date.</small></h3>
-                </div>
-                <div class="box-body">
-                    @if ($version->isLatestPanel())
-                        You are running Jexactyl <code>{{ config('app.version') }}</code>. 
-                    @else
-                        Jexactyl is not up-to-date. <code>{{ config('app.version') }} (current) -> <a href="https://github.com/jexactyl/jexactyl/releases/v{{ $version->getPanel() }}" target="_blank">{{ $version->getPanel() }}</a> (latest)</code>
-                    @endif
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="row">
         <div class="col-xs-12">
             <div class="col-xs-12 col-md-3">
