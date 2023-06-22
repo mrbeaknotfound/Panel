@@ -37,7 +37,7 @@ class ServerCreationServiceTest extends IntegrationTestCase
 
         /* @noinspection PhpFieldAssignmentTypeMismatchInspection */
         $this->bungeecord = Egg::query()
-            ->where('author', 'support@jexactyl.com')
+            ->where('author', 'gamer@sillydev.co.uk')
             ->where('name', 'Bungeecord')
             ->firstOrFail();
 

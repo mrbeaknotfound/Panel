@@ -37,7 +37,7 @@ class NestSeeder extends Seeder
     public function run()
     {
         $items = $this->repository->findWhere([
-            'author' => 'support@jexactyl.com',
+            'author' => 'gamer@sillydev.co.uk',
         ])->keyBy('name')->toArray();
 
         $this->createMinecraftNest(array_get($items, 'Minecraft'));
@@ -58,7 +58,7 @@ class NestSeeder extends Seeder
                 'private' => false,
                 'name' => 'Minecraft',
                 'description' => 'Minecraft - the classic game from Mojang. With support for Vanilla MC, Spigot, and many others',
-            ], 'support@jexactyl.com');
+            ], 'gamer@sillydev.co.uk');
         }
     }
 
@@ -74,7 +74,7 @@ class NestSeeder extends Seeder
                 'private' => false,
                 'name' => 'Source Engine',
                 'description' => 'Includes support for most Source Dedicated Server games',
-            ], 'support@jexactyl.com');
+            ], 'gamer@sillydev.co.uk');
         }
     }
 
@@ -90,7 +90,7 @@ class NestSeeder extends Seeder
                 'private' => false,
                 'name' => 'Voice Servers',
                 'description' => 'Voice servers such as Mumble and Teamspeak 3',
-            ], 'support@jexactyl.com');
+            ], 'gamer@sillydev.co.uk');
         }
     }
 
@@ -106,7 +106,7 @@ class NestSeeder extends Seeder
                 'private' => false,
                 'name' => 'Rust',
                 'description' => 'Rust - A game where you must fight to survive',
-            ], 'support@jexactyl.com');
+            ], 'gamer@sillydev.co.uk');
         }
     }
 }

@@ -17,6 +17,10 @@
             <link rel="shortcut icon" href="/favicons/favicon.ico">
             <meta name="msapplication-config" content="/favicons/browserconfig.xml">
             <meta name="theme-color" content="#0e4688">
+            <meta property="og:title" content="Silly Development" />
+            <meta property="og:description" content="Best Free 24/7 Hosting!" />
+            <meta property="og:url" content="https://media.discordapp.net/attachments/1007565613130072104/1036999833959010387/static_1.png?width=230&height=230" />
+            <meta property="og:image" content="https://media.discordapp.net/attachments/1007565613130072104/1036999833959010387/static_1.png?width=230&height=230" />
         @show
 
         @section('user-data')

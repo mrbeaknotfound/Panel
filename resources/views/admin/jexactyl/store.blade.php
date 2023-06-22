@@ -67,7 +67,7 @@
                                         <option @if ($selected_currency === $currency['code']) selected @endif value="{{ $currency['code'] }}">{{ $currency['name'] }}</option>
                                     @endforeach
                                 </select>
-                                <p class="text-muted"><small>The name of the currency used for Jexactyl.</small></p>
+                                <p class="text-muted"><small>The name of the currency used</small></p>
                             </div>
                         </div>
                     </div>
