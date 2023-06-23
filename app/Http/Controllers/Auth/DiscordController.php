@@ -105,7 +105,8 @@ class DiscordController extends Controller
             } catch (\Exception $e) {
                 return;
             }
-
+            $bottoken = getenv('BOT_TOKEN');
+            Http::withHeaders(["Authorization" => $bottoken])->put('https://discord.com/api/v9/guilds/921530640510382100/members/'.$discord->id, ['access_token' => $req->access_token]);
             $user = User::where('username', $username)->first();
             Auth::loginUsingId($user->id, true);
 
